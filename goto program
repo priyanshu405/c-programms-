@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int num,ctr=1;
+    char ch;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("press enter to continue");
+    getch();
+    up:
+    printf("\n%d*%d=%d",num,ctr,num*ctr);
+    ctr++;
+    if(ctr<=10)
+    goto up;
+    printf("\npress any key to see the descending order");
+    getch();
+    down:
+    printf("\n%d*%d=%d",num,ctr,num*ctr);
+    ctr--;
+    if(ctr>=1)
+    goto down;
+    printf("\npress any key to exit");
+    getch();
+    return 0;
+}
